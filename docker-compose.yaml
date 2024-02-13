@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  jenkins:
+    build: .
+    container_name: jenkins_service
+    ports:
+      - "8086:8080"
+    env_file:
+      - .env
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - ./plugins.yaml:/usr/share/jenkins/ref/plugins.yaml
+      - ./jenkins_casc.yaml:/var/jenkins_home/jenkins_casc.yaml
+    restart: unless-stopped
+
+volumes:
+  jenkins_home:

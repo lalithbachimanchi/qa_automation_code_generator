@@ -1,0 +1,17 @@
+openai
+pytest
+pytest-json-report
+pytest-html
+requests
+selenium
+behave
+robotframework
+pandas
+numpy
+flask
+Django
+mysql-connector-python
+PyJWT
+SQLAlchemy
+virtualenv
+aiohttp

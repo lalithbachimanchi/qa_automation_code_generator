@@ -1,0 +1,14 @@
+jenkins:
+  systemMessage: "Automating Jenkins Setup using Docker and Jenkins Configuration as Code\n\n"
+  remotingSecurity:
+   enabled: true
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+       - id: admin
+         password: admin
+  authorizationStrategy: loggedInUsersCanDoAnything
+jobs:
+  - file: /usr/local/code_generator_job.groovy
+  - file: /usr/local/code_runner_job.groovy
