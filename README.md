@@ -18,6 +18,20 @@ OPENAI_API_KEY
 OPENAI_ORG_ID
 ```
 
+## Steps for running the application
+  # Pre-requistes:
+    1. Docker
+    2. Docker-compose
+  Clone the repo and run below command
+  ```
+  docker-compose up
+  ```
+Jenkins will be up and running on ```http://localhost:8086```
+```
+Username: admin
+Password: admin
+````
+
 ## TODO
 Support Multiple Languages and Frameworks
 
